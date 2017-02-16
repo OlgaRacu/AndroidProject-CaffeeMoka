@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_category"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:background="@drawable/category"
+    android:padding="10dp"
+    android:layout_marginTop="-20dp"
+    tools:context="com.example.olga.caffemokka5.CategoryActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/new_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:text="&lt;"
+            android:onClick="categorylistReturnHomeClick"
+            android:textSize="30sp" />
+
+        <TextView
+            android:text="Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:padding="5dp"
+            android:layout_marginRight="80dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:background="#80f2e7d6"
+            android:textSize="26sp" />
+
+        <Button
+            android:text=""
+            android:textColor="#2e4fca"
+            android:textSize="18dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/cart1"
+            android:layout_marginTop="-10dp"
+            android:id="@+id/cartCategory"
+            android:onClick="cartClick" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_coffee"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#70000000"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:text="Cofee"
+        android:onClick="categoryClick" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/button_tea"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#70000000"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="Tea"
+        android:onClick="categoryClick" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/button_breakfast"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#70000000"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="Breakfast"
+        android:onClick="categoryClick" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1" >
+    </Space>
+
+    <Button
+        android:id="@+id/button_cookies"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#70000000"
+        android:textColor="#fff"
+        android:fontFamily="cursive"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="Cookies"
+        android:onClick="categoryClick" />
+
+</LinearLayout>
+

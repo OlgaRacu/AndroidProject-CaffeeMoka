@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="20dp"
+    android:background="#fdefdd"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/new_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="&lt;"
+            android:onClick="returnCartListClick" />
+
+        <TextView
+            android:text="Shipping Info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="cursive"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textAlignment="center" />
+
+        <Button
+            android:text=""
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/close"
+            android:layout_weight="1"
+            android:layout_marginLeft="300dp"
+            android:id="@+id/btAbortCart"
+            android:onClick="closeOrderClick" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:textColorHint="#dca56d"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etFirstName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:textColor="#6c6666"
+        android:hint="Last Name"
+        android:textColorHint="#dca56d"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etLastName"
+        style="@android:style/Widget.EditText" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:textColorHint="#dca56d"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etAddress" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:hint="City"
+        android:textColorHint="#dca56d"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/etCity" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Postal Code"
+        android:textColorHint="#dca56d"
+        android:ems="10"
+        android:id="@+id/etPostalCode" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Phone"
+        android:textColorHint="#dca56d"
+        android:ems="10"
+        android:id="@+id/etPhone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textColor="#6c6666"
+        android:background="@drawable/edit_text_2"
+        android:paddingLeft="20dp"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Email"
+        android:textColorHint="#dca56d"
+        android:ems="10"
+        android:id="@+id/etEmail" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:text="Order"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:textSize="25dp"
+        android:textColor="#cc5e23"
+        android:background="@drawable/edit_text_style"
+        android:layout_height="50dp"
+        android:onClick="sendOrderClick" />
+</LinearLayout>

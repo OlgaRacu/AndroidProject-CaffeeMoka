@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_about_us"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:background="@drawable/aboutus"
+tools:context="com.example.olga.caffemokka5.AboutUsActivity">
+
+<TextView
+    android:text="About Us"
+    android:textSize="30dp"
+    android:fontFamily="cursive"
+    android:textColor="#fdefdd"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:background="#b82c1412"
+    android:paddingBottom="5dp"
+    android:id="@+id/textView2"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="200dp" />
+
+<TextView
+    android:text="Cafe de’ Mercanti plays a vital role in the coffee shop landscape, offering quality espresso &amp; pastries, as well as exceptional service. The concept began years ago in a town near Rome where Gianni Battista worked with Francesco Corbi. The Old Montreal shop opened in December of 2010 and hopes to continue to serve a quality tasting coffee to its' dedicated customers for as long as possible. "
+    android:textSize="18dp"
+    android:fontFamily="cursive"
+    android:textAlignment="center"
+    android:layout_width="330dp"
+    android:layout_height="200dp"
+    android:background="#b82c1412"
+    android:textColor="#fdefdd"
+    android:id="@+id/textView"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="10dp"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:text="&lt;"
+    android:textColor="#fdefdd"
+    android:textSize="40dp"
+    android:textAlignment="textStart"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/button6"
+    android:onClick="aboutUsReturnHomeClick" />
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    app:srcCompat="@drawable/cuplogo"
+    android:id="@+id/imageView2"
+    android:layout_above="@+id/textView2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="11dp" />
+
+
+</RelativeLayout>
+

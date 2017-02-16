@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fdefdd"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="-20dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#2734a9"
+            android:text="Total: "
+            android:layout_marginRight="150dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp"
+            android:text="$$$ total"
+            android:textColor="#2734a9"
+            android:id="@+id/tvTotalPrice"
+            android:paddingLeft="-30dp"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Remove All"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#be5815"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btRemoveAll"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Check Out"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:textColor="#be5815"
+            android:layout_marginRight="5dp"
+            android:id="@+id/btCheckOut"
+            android:layout_weight="1"
+            android:onClick="checkOutClick" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
